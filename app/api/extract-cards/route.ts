@@ -73,8 +73,9 @@ export async function POST(req: NextRequest) {
             { type: "input_text", text: prompt },
             {
               type: "input_image",
-              image_url: `data:${mimeType};base64,${base64}`,
-            },
+              image_url: `data:image/jpeg;base64,${base64}`,
+              detail: "high",
+            }
           ],
         },
       ],
